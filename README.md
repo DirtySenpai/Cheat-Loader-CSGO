@@ -210,6 +210,10 @@ A: At the time of writing no. But make sure you change the signature of the load
 
 A: [The license for the project](https://github.com/ThaisenPM/Cheat-Loader/blob/master/LICENSE)
 
+**Q: Can I use this for a massive P2C?**
+
+A: Yes, but your stuff WILL get leaked eventually. I'd recommend using this for a private cheat for your friends with a max of like 30 members.
+
 **Q: Do I need a website?**
 
 A: Yes and no. You can make it local only by using a tool such as XAMPP but if you want it to be available for others to use you should get a website. Port forwarding would work too but I advise against it.

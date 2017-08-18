@@ -165,7 +165,7 @@ Upload the following files to your webserver:
 
 ## Known issues
 
-1. Always getting "Password incorrect" while entering the correct password? Click the "having trouble" button and sign in and MAKE SURE you click "Remember me"
+1. Always getting "Password incorrect" while entering the correct password? Click the "Trouble Logging In? Click Here?" button and sign in and MAKE SURE you click "Remember me". Then click the button on the bottom left and try to sign in again.
 
 ## License
 

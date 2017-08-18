@@ -172,6 +172,8 @@ Upload the following files to your webserver:
 
 1. Always getting "Password incorrect" while entering the correct password? Click the "Trouble Logging In? Click Here?" button and sign in and MAKE SURE you click "Remember me". Then click the button on the bottom left and try to sign in again.
 
+2. The usercheck_get.php file DOES NOT work on 000webhost. For whatever reason it will not load on their servers. If you need EXTREMELY cheap hosting, I recommend Hosting24.com. Use the code 1CENT for the first month to cost 1 cent so you have time to setup your loader, cheat and such.
+
 ## License
 
 This repo is listed with a [MIT license](https://github.com/ThaisenPM/Cheat-Loader/blob/master/LICENSE) which allows this to be used for commercial use, personal use and distribution and allows for modification of the source BUT does NOT allow me to be liable for what you do with the source and does not offer any warranty.

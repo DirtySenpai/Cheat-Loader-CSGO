@@ -5,7 +5,19 @@ The loader currently works off of MyBB for logging in, is HWID locked and valida
 
 [Click here to download the source](https://github.com/ThaisenPM/CheatLoader/archive/master.zip)
 
-REQUIREMENTS:
+## Screenshots
+
+![login form](https://i.gyazo.com/2bdf51f218a3896a22430b8282922a84.png)
+
+![main screen](https://i.gyazo.com/f02408535691e1af49464a14c244d6e3.png)
+
+![updater](https://i.gyazo.com/3c63fa098965ec581d9091c66dbedcf1.png)
+
+![internal cheat injector](https://i.gyazo.com/fc8abe95befe5915f833739ac9e86f7d.png)
+
+![dll cheat injector](https://i.gyazo.com/24e7c1aa8d90ddff11827448d3fa67ec.png)
+
+## requirements
 
 - A MyBB forum
 
@@ -96,17 +108,3 @@ Upload the following files to your webserver:
 4. Congrats you can now sell your shit paste.
 
 *If you have any questions, contact Thaisen#1989 on Discord. I'll maybe help you out*
-
-## Screenshots
-
-Login form
-
-![login form](https://i.gyazo.com/2bdf51f218a3896a22430b8282922a84.png)
-
-Main screen
-
-![main screen](https://i.gyazo.com/f02408535691e1af49464a14c244d6e3.png)
-
-Updater
-
-![updater](https://i.gyazo.com/3c63fa098965ec581d9091c66dbedcf1.png)

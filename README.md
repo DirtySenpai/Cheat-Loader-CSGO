@@ -42,6 +42,10 @@ I will not be actively updating this project, but I may bring in some new featur
 
 - Some decent knowledge of VB.NET
 
+## Video tutorial
+
+Coming soon!
+
 ## SQL
 
 1. Enter your PHPMyAdmin (Or whatever tool you use for SQL managment) and navigate to your mybb_users.

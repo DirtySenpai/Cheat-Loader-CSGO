@@ -37,9 +37,11 @@ I will not be actively updating this project, but I may bring in some new featur
 
     * [Use Instructions](https://github.com/ThaisenPM/Cheat-Loader#use-instructions)
 
+    * [Known Issues](https://github.com/ThaisenPM/Cheat-Loader#known-issues)
+
+    * [License](https://github.com/ThaisenPM/Cheat-Loader#license)
 
     * [FAQ](https://github.com/ThaisenPM/Cheat-Loader#faq)
-
 
     * [Credits](https://github.com/ThaisenPM/Cheat-Loader#credits)
 

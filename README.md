@@ -27,11 +27,9 @@ The loader currently works off of MyBB for logging in, is HWID locked and valida
  <img src="https://i.gyazo.com/24e7c1aa8d90ddff11827448d3fa67ec.png">
 </p>
 
-## requirements
+## Requirements
 
 - A MyBB forum
-
-- A website
 
 - An undetected cheat
 
@@ -41,7 +39,7 @@ The loader currently works off of MyBB for logging in, is HWID locked and valida
 
 ## SQL
 
-1. Firstly, enter your PHPMyAdmin (Or whatever tool you use for SQL managment) and navigate to your mybb_users.
+1. Enter your PHPMyAdmin (Or whatever tool you use for SQL managment) and navigate to your mybb_users.
 
 2. Click on the "Structure" tab at the top of PHPMyAdmin.
 

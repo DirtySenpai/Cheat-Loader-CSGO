@@ -15,6 +15,8 @@ Public Class Form1
     Dim updatecolor As Integer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        WebBrowser1.Navigate("http://localhost/mybb/member.php?action=login")
+        
         'Generate HWID
         Dim hw As New clsComputerInfo
 

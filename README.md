@@ -15,14 +15,12 @@ I will not be actively updating this project, but I may bring in some new featur
 Do you like what I'm doing with this repo? Wanna show me some love with one click? Why not click that "Star" button up above! It might keep me into this project and keep coming out with new versions for you guys to enjoy with new features you request, better security and overall cleaner code because it's a rats nest right now.
 
 ## Contents
-- Pre-Setup:
-
+- Pre-Setup
     * [Screenshots](https://github.com/ThaisenPM/Cheat-Loader#screenshots)
-
 
     * [Requirements](https://github.com/ThaisenPM/Cheat-Loader#requirements)
 
-- Setup:
+- Setup
     * [Video Tutorial](https://github.com/ThaisenPM/Cheat-Loader#video-tutorial)
 
     * [SQL Setup](https://github.com/ThaisenPM/Cheat-Loader#sql)
@@ -35,7 +33,6 @@ Do you like what I'm doing with this repo? Wanna show me some love with one clic
 
     * [Updater Setup](https://github.com/ThaisenPM/Cheat-Loader#updater-vb)
 - Post-Setup
-
     * [Use Instructions](https://github.com/ThaisenPM/Cheat-Loader#use-instructions)
 
     * [Known Issues](https://github.com/ThaisenPM/Cheat-Loader#known-issues)

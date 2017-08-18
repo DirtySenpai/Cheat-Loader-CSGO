@@ -16,34 +16,35 @@ Do you like what I'm doing with this repo? Wanna show me some love with one clic
 
 ## Contents
 - Pre-Setup
-    * [Screenshots](https://github.com/ThaisenPM/Cheat-Loader#screenshots)
+    * [Screenshots](#screenshots)
 
-    * [Requirements](https://github.com/ThaisenPM/Cheat-Loader#requirements)
+    * [Requirements](#requirements)
 
 - Setup
     * [Video Tutorial](https://github.com/ThaisenPM/Cheat-Loader#video-tutorial)
 
-    * [SQL Setup](https://github.com/ThaisenPM/Cheat-Loader#sql)
+    * [SQL Setup](#sql)
 
-    * [Web Files](https://github.com/ThaisenPM/Cheat-Loader#web)
+    * [Web Files](#web)
 
-    * [Web Setup](https://github.com/ThaisenPM/Cheat-Loader#web-files)
+    * [Web Setup](#web-files)
 
-    * [Loader Setup](https://github.com/ThaisenPM/Cheat-Loader#loader-vb)
+    * [Loader Setup](#loader-vb)
 
-    * [Updater Setup](https://github.com/ThaisenPM/Cheat-Loader#updater-vb)
+    * [Updater Setup](#updater-vb)
+    
 - Post-Setup
-    * [Use Instructions](https://github.com/ThaisenPM/Cheat-Loader#use-instructions)
+    * [Use Instructions](#use-instructions)
 
-    * [Known Issues](https://github.com/ThaisenPM/Cheat-Loader#known-issues)
+    * [Known Issues](#known-issues)
 
-    * [License](https://github.com/ThaisenPM/Cheat-Loader#license)
+    * [License](#license)
 
-    * [FAQ](https://github.com/ThaisenPM/Cheat-Loader#faq)
+    * [FAQ](#faq)
 
-    * [Credits](https://github.com/ThaisenPM/Cheat-Loader#credits)
+    * [Credits](#credits)
 
-    * [Possible Updates](https://github.com/ThaisenPM/Cheat-Loader#possible-updates)
+    * [Possible Updates](#possible-updates)
 
 ## Screenshots
 
@@ -166,6 +167,12 @@ Upload the following files to your webserver:
 1. If you update the loader, change the version number in the loader's Form1.vb to the new number and change version.txt on your webserver
 
 2. Change the folders from "C:\temp\Nova" to whatever you want
+
+3. Status.txt on your webserver works like so. 0 = offline. 1 = online. 2 = maintenance.
+
+4. For making an external cheat to work with the menu, create a new form and code it in VB.NET.
+
+5. If you do not want an external cheat, remove the label and adjust the other labels on Form3.vb under the groupbox named cheats.
 
 **Congrats you can now sell your paste!**
 

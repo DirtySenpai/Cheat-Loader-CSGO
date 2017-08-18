@@ -14,6 +14,8 @@ I will not be actively updating this project, but I may bring in some new featur
 
 Do you like what I'm doing with this repo? Wanna show me some love with one click? Why not click that "Star" button up above! It might keep me into this project and keep coming out with new versions for you guys to enjoy with new features you request, better security and overall cleaner code because it's a rats nest right now.
 
+Please read the "known issues" section as it will give some insight to why your loader may not be working. I will try to update it with new information as they become known.
+
 ## Contents
 - Pre-Setup
     * [Screenshots](#screenshots)

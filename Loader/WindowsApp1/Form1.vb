@@ -16,6 +16,8 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         WebBrowser1.Navigate("http://localhost/mybb/member.php?action=login")
+        WebBrowser2.Navigate("http://localhost/usercheck.php")
+        WebBrowser3.Navigate("http://localhost/hwid.php")
         
         'Generate HWID
         Dim hw As New clsComputerInfo

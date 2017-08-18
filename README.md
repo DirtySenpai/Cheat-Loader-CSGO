@@ -17,8 +17,7 @@ REQUIREMENTS:
 
 - Some decent knowledge of VB.NET
 
-
-###### SQL
+## SQL
 
 1. Firstly, enter your PHPMyAdmin (Or whatever tool you use for SQL managment) and navigate to your mybb_users.
 
@@ -26,8 +25,7 @@ REQUIREMENTS:
 
 3. Now add a new column named "hwid" that is a "varchar" with a max limit of "255"
 
-
-###### Web
+## Web
 
 Upload the following files to your webserver:
 
@@ -47,8 +45,7 @@ Upload the following files to your webserver:
 
 - ayyware.dll (A paste that's probably detected to test injections. Run your game with the "-insecure" flag)
 
-
-###### Web Files
+## Web Files
 
 1. Now navigate to the "hwid_get.php" and "usercheck_get.php" files on your website.
 
@@ -58,8 +55,7 @@ Upload the following files to your webserver:
 
 4. In usercheck_get.php, modify the usergroup numbers to match your forums.
 
-
-###### Loader VB
+## Loader VB
 
 **Goto Form1.vb**
 
@@ -73,29 +69,23 @@ Upload the following files to your webserver:
 
 5. Find any lines with "localhost" and change them to your domain
 
-
 **Goto Form3.vb**
 
 1. Change any instance of "localhost" with your domain.
-
 
 **Goto Form5.vb**
 
 1. Change the domain in line 77 to your own (This one is the cheat itself)
 
+**Build your loader now, take it and rename it to "loader.exe" and upload it to your website.**
 
-
-&*Build your loader now, take it and rename it to "loader.exe" and upload it to your website.**
-
-
-###### Updater VB
+## Updater VB
 
 1. On line 45, change the domain to your own.
 
 2. Build your updater now, take it and rename it to "Updater.exe" and upload it to your website.
 
-
-###### Use Instructions
+## Use Instructions
 
 1. If you update the loader, change the version number in the loader's Form1.vb to the new number and change version.txt on your webserver
 
@@ -105,5 +95,18 @@ Upload the following files to your webserver:
 
 4. Congrats you can now sell your shit paste.
 
-
 *If you have any questions, contact Thaisen#1989 on Discord. I'll maybe help you out*
+
+## Screenshots
+
+Login form
+
+![login form](https://i.gyazo.com/2bdf51f218a3896a22430b8282922a84.png)
+
+Main screen
+
+![main screen](https://i.gyazo.com/f02408535691e1af49464a14c244d6e3.png)
+
+Updater
+
+![updater](https://i.gyazo.com/3c63fa098965ec581d9091c66dbedcf1.png)

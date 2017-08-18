@@ -116,14 +116,18 @@ Upload the following files to your webserver:
 
 ## FAQ
 
-Q: Is this a cheat for Counter Strike?
+**Q: Is this a cheat for Counter Strike?**
 
 A: No, this is a tool for being able to sell cheats without giving your .dll file to your users
 
-Q: Is this only for Counter Strike?
+**Q: Is this only for Counter Strike?**
 
 A: Learn to read the text I wrote... No. In the loader, goto Form5.vb and change line 105 to whatever game you want.
 
-Q: Is this detected by VAC?
+**Q: Is this detected by VAC?**
 
 A: At the time of writing no. But make sure you change the signature of the loader to some extent.
+
+**Q: If I am using this, do I have to give you credit?**
+
+A: No. I don't care. If you're pasting you probably wouldn't give any credit anyways

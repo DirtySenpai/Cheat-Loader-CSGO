@@ -220,7 +220,14 @@ A: Yes and no. You can make it local only by using a tool such as XAMPP but if y
 
 A few things I would possibly do, but don't get your hopes up.
 
+To do:
+
 - [ ] Auto-check user group after being logged in
-- [X] Make dll's remove themselves automatically
 - [ ] MyBB admin panel to change status and version
 - [ ] Clean up login heavily
+- [ ] Delayed injections
+- [ ] Add a MOTD function
+
+Completed:
+
+- [X] Make dll's remove themselves automatically

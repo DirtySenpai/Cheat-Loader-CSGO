@@ -25,12 +25,9 @@ I will not be actively updating this project, but I may bring in some new featur
 
     * [Web Files](https://github.com/ThaisenPM/Cheat-Loader#web)
 
-
     * [Web Setup](https://github.com/ThaisenPM/Cheat-Loader#web-files)
 
-
     * [Loader Setup](https://github.com/ThaisenPM/Cheat-Loader#loader-vb)
-
 
     * [Updater Setup](https://github.com/ThaisenPM/Cheat-Loader#updater-vb)
 - Post-Setup
@@ -120,6 +117,14 @@ Upload the following files to your webserver:
 3. Modify them to work for your website's setup.
 
 4. In usercheck_get.php, modify the usergroup numbers to match your forums.
+
+5. Go to your MyBB admin panel -> configuration -> general configuration.
+
+6. Set the CAPTCHA field to none.
+
+7. Now to go configuration -> login and registration options
+
+8. Set "Number of times to allow failed logins" to 0
 
 ## Loader VB
 

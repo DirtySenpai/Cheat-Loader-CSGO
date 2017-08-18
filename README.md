@@ -108,7 +108,7 @@ Upload the following files to your webserver:
 
 **OPTIONAL:**
 
-- ayyware.dll (A paste that's probably detected to test injections. Run your game with the "-insecure" flag)
+- add a .dll of a cheat to your web server. Re-name it to ayyware.dll and put it into the root of your website (public_html/ayyware.dll)
 
 ## Web Files
 
@@ -173,6 +173,8 @@ Upload the following files to your webserver:
 4. For making an external cheat to work with the menu, create a new form and code it in VB.NET.
 
 5. If you do not want an external cheat, remove the label and adjust the other labels on Form3.vb under the groupbox named cheats.
+
+6. To change where the cheat downloads from goto Form5.vb and edit the link on line 77.
 
 **Congrats you can now sell your paste!**
 

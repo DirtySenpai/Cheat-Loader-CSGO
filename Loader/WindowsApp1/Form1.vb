@@ -1,4 +1,4 @@
-﻿Imports System.IO
+Imports System.IO
 Imports System.Net
 Imports System.Threading
 Imports System.Management
@@ -327,3 +327,16 @@ Public Class Form1
         End If
     End Sub
 End Class
+
+'-----------------------------------------------------
+' Coded by /id/Thaisen! Free loader source
+' https://github.com/ThaisenPM/Cheat-Loader-CSGO
+' Note to the person using this, removing this
+' text is in violation of the license you agreed
+' to by downloading. Only you can see this so what
+' does it matter anyways.
+' Copyright © ThaisenPM 2017
+' Licensed under a MIT license
+' Read the terms of the license here
+' https://github.com/ThaisenPM/Cheat-Loader-CSGO/blob/master/LICENSE
+'-----------------------------------------------------

@@ -10,7 +10,7 @@ Although it comes pre-built for MyBB, you could easily update this to work with 
 
 I will not be actively updating this project, but I may bring in some new features from time to time when I am bored and have nothing else to do. If you need support, first read the [FAQ](https://github.com/ThaisenPM/CheatLoader/blob/master/README.md#faq). If you still need help contact me on Discord at Thaisen#1989 or [on my Discord server](https://discord.gg/gSkGahq)!
 
-[Click here to download the source](https://github.com/ThaisenPM/CheatLoader/archive/master.zip)
+[Click here to download the source](https://github.com/ThaisenPM/CheatLoader/archive/master.zip). By downloading and using the source you agreed to the [License](#license) that comes with the loader.
 
 Do you like what I'm doing with this repo? Wanna show me some love with one click? Why not click that "Star" button up above! It might keep me into this project and keep coming out with new versions for you guys to enjoy with new features you request, better security and overall cleaner code because it's a rats nest right now.
 

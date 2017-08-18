@@ -133,6 +133,10 @@ Upload the following files to your webserver:
 
 5. Find any lines with "localhost" and change them to your domain
 
+**Goto Form2.vb**
+
+1. Change localhost to your domain
+
 **Goto Form3.vb**
 
 1. Change any instance of "localhost" with your domain.
@@ -155,9 +159,11 @@ Upload the following files to your webserver:
 
 2. Change the folders from "C:\temp\Nova" to whatever you want
 
-3. The DLLs don't delete themselves, just hide. Fix that (Not gonna give a fully working source for free)
-
 **Congrats you can now sell your paste!**
+
+## Known issues
+
+1. Always getting "Password incorrect" while entering the correct password? Click the "having trouble" button and sign in and MAKE SURE you click "Remember me"
 
 ## License
 

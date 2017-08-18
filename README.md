@@ -1,4 +1,6 @@
-# Cheat Loader
+<p align="center">
+# Nova Hook | VB.NET Cheat Loader
+</p>
 
 Hello! My name is Thaisen! I got bored so I started to build a basic cheat loader for whatever you need!
 The loader currently works off of MyBB for logging in, is HWID locked and validates the user's rank.

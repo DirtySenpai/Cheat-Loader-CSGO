@@ -176,6 +176,8 @@ Upload the following files to your webserver:
 
 2. The usercheck_get.php file DOES NOT work on 000webhost. For whatever reason it will not load on their servers. If you need EXTREMELY cheap hosting, I recommend Hosting24.com. Use the code 1CENT for the first month to cost 1 cent so you have time to setup your loader, cheat and such.
 
+3. If the domains don't change, go to the design tab. On Form1, expand the form size to be big. You will see 3 white boxes. The top right is the MyBB forum link, the bottom right is the usercheck.php and the bottom left is the hwid.php. Change those as well to be sure. Make sure to do the same thing on Form2 so that users experiencing the login failed issue can still get in to their account.
+
 ## License
 
 This repo is listed with a [MIT license](https://github.com/ThaisenPM/Cheat-Loader/blob/master/LICENSE) which allows this to be used for commercial use, personal use and distribution and allows for modification of the source BUT does NOT allow me to be liable for what you do with the source and does not offer any warranty.

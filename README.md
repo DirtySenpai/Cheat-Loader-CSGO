@@ -7,7 +7,8 @@ The loader currently works off of MyBB for logging in, is HWID locked and valida
 
 ## Screenshots
 
-![login form](https://i.gyazo.com/2bdf51f218a3896a22430b8282922a84.png)
+<p align="center">
+ ![login form](https://i.gyazo.com/2bdf51f218a3896a22430b8282922a84.png)
 
 ![main screen](https://i.gyazo.com/f02408535691e1af49464a14c244d6e3.png)
 
@@ -16,6 +17,9 @@ The loader currently works off of MyBB for logging in, is HWID locked and valida
 ![internal cheat injector](https://i.gyazo.com/fc8abe95befe5915f833739ac9e86f7d.png)
 
 ![dll cheat injector](https://i.gyazo.com/24e7c1aa8d90ddff11827448d3fa67ec.png)
+
+
+</p>
 
 ## requirements
 

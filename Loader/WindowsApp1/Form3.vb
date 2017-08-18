@@ -14,6 +14,23 @@ Public Class Form3
     End Sub
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Removes the .dll if CS:GO is not open. If it is open and it tries to remove it, it will give an error.
+        Dim pName As String = "csgo"
+        Dim psList() As Process
+        Try
+            psList = Process.GetProcesses()
+            For Each p As Process In psList
+                If (pName = p.ProcessName) Then
+
+                Else
+                    Directory.Delete("C:\temp\Nova\dll", True)
+                End If
+            Next p
+
+        Catch ex As Exception
+
+        End Try
+        
         'Generate HWID
         Dim hw As New clsComputerInfo
 

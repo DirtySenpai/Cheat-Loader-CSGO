@@ -10,6 +10,41 @@ I will not be actively updating this project, but I may bring in some new featur
 
 [Click here to download the source](https://github.com/ThaisenPM/CheatLoader/archive/master.zip)
 
+## Contents
+- Pre-Setup:
+
+    * [Screenshots](https://github.com/ThaisenPM/Cheat-Loader#screenshots)
+
+
+    * [Requirements](https://github.com/ThaisenPM/Cheat-Loader#requirements)
+
+- Setup:
+    * [Video Tutorial](https://github.com/ThaisenPM/Cheat-Loader#video-tutorial)
+
+    * [SQL Setup](https://github.com/ThaisenPM/Cheat-Loader#sql)
+
+    * [Web Files](https://github.com/ThaisenPM/Cheat-Loader#web)
+
+
+    * [Web Setup](https://github.com/ThaisenPM/Cheat-Loader#web-files)
+
+
+    * [Loader Setup](https://github.com/ThaisenPM/Cheat-Loader#loader-vb)
+
+
+    * [Updater Setup](https://github.com/ThaisenPM/Cheat-Loader#updater-vb)
+- Post-Setup
+
+    * [Use Instructions](https://github.com/ThaisenPM/Cheat-Loader#use-instructions)
+
+
+    * [FAQ](https://github.com/ThaisenPM/Cheat-Loader#faq)
+
+
+    * [Credits](https://github.com/ThaisenPM/Cheat-Loader#credits)
+
+    * [Possible Updates](https://github.com/ThaisenPM/Cheat-Loader#possible-updates)
+
 ## Screenshots
 
 <p align="center">
@@ -124,6 +159,10 @@ Upload the following files to your webserver:
 
 **Congrats you can now sell your paste!**
 
+## License
+
+This repo is listed with a [MIT license](https://github.com/ThaisenPM/Cheat-Loader/blob/master/LICENSE) which allows this to be used for commercial use, personal use and distribution and allows for modification of the source BUT does NOT allow me to be liable for what you do with the source and does not offer any warranty.
+
 ## FAQ
 
 **Q: Is this a cheat for Counter Strike?**
@@ -140,8 +179,16 @@ A: At the time of writing no. But make sure you change the signature of the load
 
 **Q: If I am using this, do I have to give you credit?**
 
-A: No. I don't care. If you're pasting you probably wouldn't give any credit anyways
+A: [The license for the project](https://github.com/ThaisenPM/Cheat-Loader/blob/master/LICENSE)
 
 ## Credits
 
-[JackkTutorials](https://www.youtube.com/channel/UC64x_rKHxY113KMWmprLBPA) for the HWID creation and encryption code
+[JackkTutorials](https://www.youtube.com/channel/UC64x_rKHxY113KMWmprLBPA) for the HWID creation and encryption code.
+
+## Possible Updates
+
+A few things I would possibly do, but don't get your hopes up.
+
+- [ ] Auto-check user group after being logged in
+- [ ] MyBB admin panel to change status and version
+- [ ] Clean up login heavily

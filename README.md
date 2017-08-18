@@ -12,6 +12,8 @@ I will not be actively updating this project, but I may bring in some new featur
 
 [Click here to download the source](https://github.com/ThaisenPM/CheatLoader/archive/master.zip)
 
+Do you like what I'm doing with this repo? Wanna show me some love with one click? Why not click that "Star" button up above! It might keep me into this project and keep coming out with new versions for you guys to enjoy with new features you request, better security and overall cleaner code because it's a rats nest right now.
+
 ## Contents
 - Pre-Setup:
 

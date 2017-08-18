@@ -168,7 +168,7 @@ Upload the following files to your webserver:
 
 1. If you update the loader, change the version number in the loader's Form1.vb to the new number and change version.txt on your webserver
 
-2. Change the folders from "C:\temp\Nova" to whatever you want
+2. Change the folders from "C:\temp\Nova" to whatever you want. Do not leave them in this spot.
 
 3. Status.txt on your webserver works like so. 0 = offline. 1 = online. 2 = maintenance.
 

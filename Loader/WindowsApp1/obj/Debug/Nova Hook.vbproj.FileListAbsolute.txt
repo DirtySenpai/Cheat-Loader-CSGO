@@ -1,0 +1,30 @@
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\Nova Hook.vbproj.GenerateResource.Cache
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\Nova Hook.vbprojResolveAssemblyReference.cache
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\bin\Debug\Nova Hook.exe.config
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\bin\Debug\Nova Hook.exe
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\bin\Debug\Nova Hook.pdb
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\bin\Debug\Nova Hook.xml
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\NovaHook.Form1.resources
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\NovaHook.Form2.resources
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\NovaHook.Form3.resources
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\NovaHook.Resources.resources
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\Nova Hook.exe
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\Nova Hook.xml
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\Nova Hook.pdb
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp1\WindowsApp1\obj\Debug\NovaHook.Form6.resources
+F:\Loader\Source\Loader\WindowsApp1\bin\Debug\Nova Hook.exe.config
+F:\Loader\Source\Loader\WindowsApp1\bin\Debug\Nova Hook.exe
+F:\Loader\Source\Loader\WindowsApp1\bin\Debug\Nova Hook.pdb
+F:\Loader\Source\Loader\WindowsApp1\bin\Debug\Nova Hook.xml
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\Nova Hook.vbprojResolveAssemblyReference.cache
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\NovaHook.Form1.resources
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\NovaHook.Form2.resources
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\NovaHook.Form3.resources
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\NovaHook.Resources.resources
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\Nova Hook.vbproj.GenerateResource.Cache
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\Nova Hook.exe
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\Nova Hook.xml
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\Nova Hook.pdb
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\NovaHook.Form4.resources
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\NovaHook.Form6.resources
+F:\Loader\Source\Loader\WindowsApp1\obj\Debug\NovaHook.Form5.resources

@@ -1,0 +1,22 @@
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\bin\Debug\Nova Updater.exe.config
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\bin\Debug\Nova Updater.exe
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\bin\Debug\Nova Updater.pdb
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\bin\Debug\Nova Updater.xml
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\NovaUpdater.Form1.resources
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\NovaUpdater.Resources.resources
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\Nova Updater.vbproj.GenerateResource.Cache
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\Nova Updater.exe
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\Nova Updater.xml
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\Nova Updater.pdb
+C:\Users\Darcy\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\Nova Updater.vbprojResolveAssemblyReference.cache
+F:\Loader\Source\Updater\WindowsApp2\bin\Debug\Nova Updater.exe.config
+F:\Loader\Source\Updater\WindowsApp2\bin\Debug\Nova Updater.exe
+F:\Loader\Source\Updater\WindowsApp2\bin\Debug\Nova Updater.pdb
+F:\Loader\Source\Updater\WindowsApp2\bin\Debug\Nova Updater.xml
+F:\Loader\Source\Updater\WindowsApp2\obj\Debug\NovaUpdater.Form1.resources
+F:\Loader\Source\Updater\WindowsApp2\obj\Debug\NovaUpdater.Resources.resources
+F:\Loader\Source\Updater\WindowsApp2\obj\Debug\Nova Updater.vbproj.GenerateResource.Cache
+F:\Loader\Source\Updater\WindowsApp2\obj\Debug\Nova Updater.exe
+F:\Loader\Source\Updater\WindowsApp2\obj\Debug\Nova Updater.xml
+F:\Loader\Source\Updater\WindowsApp2\obj\Debug\Nova Updater.pdb
+F:\Loader\Source\Updater\WindowsApp2\obj\Debug\Nova Updater.vbprojResolveAssemblyReference.cache

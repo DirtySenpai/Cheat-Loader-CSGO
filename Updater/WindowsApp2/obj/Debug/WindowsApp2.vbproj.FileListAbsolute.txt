@@ -1,0 +1,10 @@
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\bin\Debug\WindowsApp2.exe.config
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\bin\Debug\WindowsApp2.exe
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\bin\Debug\WindowsApp2.pdb
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\bin\Debug\WindowsApp2.xml
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\WindowsApp2.Form1.resources
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\WindowsApp2.Resources.resources
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\WindowsApp2.vbproj.GenerateResource.Cache
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\WindowsApp2.exe
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\WindowsApp2.xml
+c:\users\darcy\documents\visual studio 2017\Projects\WindowsApp2\WindowsApp2\obj\Debug\WindowsApp2.pdb

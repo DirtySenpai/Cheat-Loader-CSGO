@@ -229,7 +229,7 @@ A: Form1.vb: Lines 70-77 - Form2.vb: Line 26 - Form5.vb: Lines 77, 78, 80, 84
 ___
 **Q: Why won't my cheat inject/why are the dlls downloading somewhere else/directory issues**
 
-A: This is a common mistake. The cheat's dll filepath MUST have a trailing \ Meaning you type out the path that you want, then add a \ to the end. (Example of wrong: pszLibFileRemote = "C:\temp\Nova\dll" + filename :::: Example of right: pszLibFileRemote = "C:\temp\Nova\dll**\**" + filename). That MUST be there for both the injection of the .dll and for the downloading of the .dll.
+A: This is a common mistake. The cheat's dll filepath MUST have a trailing \ Meaning you type out the path that you want, then add a \ to the end. (Example of wrong: pszLibFileRemote = "C:\temp\Nova\dll" + filename :::: Example of right: pszLibFileRemote = "C:\temp\Nova\dll\" + filename). That MUST be there for both the injection of the .dll and for the downloading of the .dll.
 ___
 **Q: Where is the line that says what DLL gets injected?**
 

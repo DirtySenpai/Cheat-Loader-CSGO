@@ -53,11 +53,11 @@ Have some code you wanna add to the repo? Let me know through an email (thaisenb
 ## Screenshots
 
 <p align="center">
- <img src="https://i.gyazo.com/2bdf51f218a3896a22430b8282922a84.png">
+ <img src="https://i.gyazo.com/718c41797d1fa2171bec3f4a9dd9dd7f.png">
 </p>
 
 <p align="center">
- <img src="https://i.gyazo.com/f02408535691e1af49464a14c244d6e3.png">
+ <img src="https://i.gyazo.com/b253471936f2681fc54e4c17f478d26a.png">
 </p>
 
 <p align="center">
@@ -65,7 +65,7 @@ Have some code you wanna add to the repo? Let me know through an email (thaisenb
 </p>
 
 <p align="center">
- <img src="https://i.gyazo.com/fc8abe95befe5915f833739ac9e86f7d.png">
+ <img src="https://i.gyazo.com/7562a30bb5e04da0782b77507c05d0d6.png">
 </p>
 
 <p align="center">
@@ -97,6 +97,8 @@ Coming soon!
 ## Web
 
 Upload the following files to your webserver:
+
+- changes.txt
 
 - hwid.php
 
@@ -138,15 +140,17 @@ Upload the following files to your webserver:
 
 **Goto Form1.vb**
 
-1. Find "Dim address As String = "http://localhost/version.txt"" and change "localhost" to your website.
+1. Change the links from lines 18-20 to match your website.
 
-2. Now naviagte to line 66 and edit the file names to whatever you like
+2. Change "yourdomain.com" on line 33 to your actual domain.
 
-3. The lines commented from 76-95 check if the loader is on a USB and if steam is open or not. Uncomment if you want those features.
+3. Change the link on line 65 to match your website.
 
-4. Go to line 187 and again edit the domain to your website's MyBB forums (MAKE SURE it has "/member.php?action=login" on the end)
+4. Change the folder paths on like 82-89 to whatever you want them to be.
 
-5. Find any lines with "localhost" and change them to your domain
+5. The lines commented from 92-111 check if the loader is on a USB and if steam is open or not. Uncomment if you want those features.
+
+6. Change the domains on the following lines: 203, 222, 223, 237, 238, 270-272, 280-282, 328.
 
 **Goto Form2.vb**
 
@@ -156,9 +160,11 @@ Upload the following files to your webserver:
 
 1. Change any instance of "localhost" with your domain.
 
+2. Add or remove whatever cheats you want to support (Currently lines 24-28 BUT is not limited to only 5)
+
 **Goto Form5.vb**
 
-1. Change the domain in line 77 to your own (This one is the cheat itself)
+1. Change lines 103-118 to match your setup for what cheats you wish to support
 
 **Build your loader now, take it and rename it to "loader.exe" and upload it to your website.**
 
@@ -205,7 +211,7 @@ A: No, this is a tool for being able to sell cheats without giving your .dll fil
 ___
 **Q: Is this only for Counter Strike?**
 
-A: Learn to read the text I wrote... No. In the loader, goto Form5.vb and change line 105 to whatever game you want.
+A: No! Although it is targeted towards CS:GO it can literally be used for any game that takes dll based cheats
 ___
 **Q: Is this detected by VAC?**
 
@@ -223,17 +229,9 @@ ___
 
 A: Yes and no. You can make it local only by using a tool such as XAMPP but if you want it to be available for others to use you should get a website. Port forwarding would work too but I advise against it.
 ___
-**Q: Where are all the places I need to change the folder names?**
-
-A: Form1.vb: Lines 70-77 - Form2.vb: Line 26 - Form5.vb: Lines 77, 78, 80, 84
-___
 **Q: Why won't my cheat inject/why are the dlls downloading somewhere else/directory issues**
 
 A: This is a common mistake. The cheat's dll filepath MUST have a trailing \ Meaning you type out the path that you want, then add a \ to the end. (Example of wrong: pszLibFileRemote = "C:\temp\Nova\dll" + filename :::: Example of right: pszLibFileRemote = "C:\temp\Nova\dll\" + filename). That MUST be there for both the injection of the .dll and for the downloading of the .dll.
-___
-**Q: Where is the line that says what DLL gets injected?**
-
-A: Form5.vb, line 84. The pszLibFileRemote is the file you wish to inject.
 
 ## Credits
 
@@ -245,12 +243,12 @@ A few things I would possibly do, but don't get your hopes up.
 
 To do:
 
-- [ ] Auto-check user group after being logged in
 - [ ] MyBB admin panel to change status and version
-- [ ] Clean up login heavily
 - [ ] Delayed injections
-- [ ] Add a MOTD function
 
 Completed:
 
 - [X] Make dll's remove themselves automatically
+- [X] Add a MOTD function (Kind of in the form of Change Logs)
+- [X] Clean up login heavily
+- [X] Auto-check user group after being logged in

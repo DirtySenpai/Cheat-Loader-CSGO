@@ -1,19 +1,10 @@
 <?php
-$link = mysqli_connect('localhost','root','');
-$database = mysqli_select_db($link,'mybb');
-
-// Create connection
-/*$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} */
+$link = mysqli_connect('localhost','database_username','database_password');
+$database = mysqli_select_db($link,'database_name');
 
 $user = $_GET['username'];
 
-$sql = "SELECT * FROM forums_users WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
-//$sql = "SELECT * FROM forums_users";
+$sql = "SELECT * FROM mybb_users WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
 $result = $link->query($sql);
 
 if ($result->num_rows > 0) {

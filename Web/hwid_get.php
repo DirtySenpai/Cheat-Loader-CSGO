@@ -1,11 +1,11 @@
 <?php
-$link = mysqli_connect('localhost','root','');
-$database = mysqli_select_db($link,'mybb');
+$link = mysqli_connect('localhost','database_username','database_password');
+$database = mysqli_select_db($link,'database_name');
 
 $user = $_GET['username'];
 $hwid = $_GET['hwidin'];
 
-$sql = "SELECT * FROM forums_users WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
+$sql = "SELECT * FROM mybb_users WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
 $result = $link->query($sql);
 
 if(strlen($hwid) < 1)
@@ -29,7 +29,7 @@ else
 			}
 			else
 			{
-				$sql = "UPDATE forums_users SET hwid='$hwid' WHERE username='$user'";
+				$sql = "UPDATE mybb_users SET hwid='$hwid' WHERE username='$user'";
 				if(mysqli_query($link, $sql))
 				{
 					echo $row['hwid'];

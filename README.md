@@ -223,6 +223,15 @@ A: Yes, but your stuff WILL get leaked eventually. I'd recommend using this for 
 
 A: Yes and no. You can make it local only by using a tool such as XAMPP but if you want it to be available for others to use you should get a website. Port forwarding would work too but I advise against it.
 
+**Q: Where are all the places I need to change the folder names?**
+A: Form1.vb: Lines 70-77 - Form2.vb: Line 26 - Form5.vb: Lines 77, 78, 80, 84
+
+**Q: Why won't my cheat inject/why are the dlls downloading somewhere else/directory issues**
+A: This is a common mistake. The cheat's dll filepath MUST have a trailing \. Meaning you type out the path that you want, then add a \ to the end. (Example of wrong: pszLibFileRemote = "C:\temp\Nova\dll" + filename - Example of right: pszLibFileRemote = "C:\temp\Nova\dll\" + filename). That MUST be there for both the injection of the .dll and for the downloading of the .dll.
+
+**Q: Where is the line that says what DLL gets injected?**
+A: Form5.vb, line 84. The pszLibFileRemote is the file you wish to inject.
+
 ## Credits
 
 [JackkTutorials](https://www.youtube.com/channel/UC64x_rKHxY113KMWmprLBPA) for the HWID creation and encryption code.

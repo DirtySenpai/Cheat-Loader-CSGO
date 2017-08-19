@@ -18,7 +18,16 @@ Public Class Form1
         WebBrowser1.Navigate("http://localhost/mybb/member.php?action=login")
         WebBrowser2.Navigate("http://localhost/usercheck.php")
         WebBrowser3.Navigate("http://localhost/hwid.php")
-        
+
+        'Loads user settings
+        If My.Settings.check = True Then
+            TextBox1.Text = My.Settings.username
+            TextBox2.Text = My.Settings.password
+            CheckBox1.Checked = My.Settings.check
+        Else
+            'Do nothing
+        End If
+
         'Check connection to website
         Try
             My.Computer.Network.Ping("www.yoursite.com")
@@ -58,19 +67,14 @@ Public Class Form1
         Dim reader As StreamReader = New StreamReader(client.OpenRead(address))
         Label4.Text = reader.ReadToEnd
         Label4.ForeColor = Color.Transparent
+        Label4.Location = New Point(1000, 2000)
 
         If (currentVerison < Label4.Text) Then
             updateneeded = 1
-            Label5.Text = "An update is available! Click Here"
-            Me.Size = New Size(198, 231)
         ElseIf (currentVerison > Label4.Text) Then
             updateneeded = 1
-            Label5.Text = "Update the webserver side file now"
-            Me.Size = New Size(198, 231)
         Else
             updateneeded = 0
-            Label5.Text = ""
-            Me.Size = New Size(198, 212)
         End If
 
         Label6.Text = "Current Status: Waiting for input"
@@ -79,7 +83,7 @@ Public Class Form1
         Else
             firstlaunch = 1
             System.IO.Directory.CreateDirectory("C:\temp\Nova\")
-            My.Computer.FileSystem.WriteAllText("c:\temp\nova\Nova.Hook", "This file just tells the loader if it's your first time opening it or not... delete it if you want XD", False)
+            My.Computer.FileSystem.WriteAllText("c:\temp\nova\Nova.Hook", "", False)
             Dim ToHideDir As New System.IO.DirectoryInfo("C:\temp\Nova\")
             ToHideDir.Attributes = IO.FileAttributes.Hidden
         End If
@@ -180,6 +184,7 @@ Public Class Form1
         WebBrowser3.Document.GetElementById("hwidin").SetAttribute("value", txtHWID.Text)
         WebBrowser3.Document.GetElementById("submit").InvokeMember("click")
     End Sub
+
     ' Exit button
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Application.Exit()
@@ -191,7 +196,6 @@ Public Class Form1
             Label6.Text = "Current Status: Checking password"
             If WebBrowser1.DocumentText.Contains("<p>You have successfully been logged in") Then
                 Label6.Text = "Current Status: Password accepted"
-                My.Computer.FileSystem.WriteAllText("c:\temp\nova\Nova.Hook.Username", TextBox1.Text, False)
                 confirm = 1
             Else
                 Label6.ForeColor = Color.Red
@@ -246,7 +250,19 @@ Public Class Form1
             Label6.Text = "Current Status: Checking HWID"
             If WebBrowser3.DocumentText.Contains("HWID is correct") Then
                 Label6.Text = "Current Status: HWID accepted!"
-                Thread.Sleep(100)
+
+                If (CheckBox1.Checked = True) Then
+                    My.Settings.check = True
+                ElseIf (CheckBox1.Checked = False) Then
+                    My.Settings.check = False
+                End If
+
+                My.Settings.username = TextBox1.Text
+                My.Settings.password = TextBox2.Text
+                My.Settings.Save()
+                TextBox1.Text = ""
+                TextBox2.Text = ""
+                TextBox1.Focus()
                 Form3.Show()
                 Me.Hide()
                 Button1.Enabled = True
@@ -279,23 +295,6 @@ Public Class Form1
         Form2.Show()
     End Sub
     ' Update Script
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-        Dim exePath As String = Application.ExecutablePath()
-        My.Computer.FileSystem.WriteAllText("c:\temp\nova\Nova.Hook.Path", exePath, False)
-        Me.Hide()
-
-        Dim appPath As String = My.Application.Info.DirectoryPath
-
-        If My.Computer.FileSystem.FileExists(appPath + "\Updater.exe") Then
-            Process.Start(appPath + "\Updater.exe")
-            Application.Exit()
-        Else
-            My.Computer.Network.DownloadFile("http://localhost/Updater.exe", appPath + "\Updater.exe")
-            Process.Start(appPath + "\Updater.exe")
-            Application.Exit()
-        End If
-    End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
 

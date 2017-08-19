@@ -70,11 +70,13 @@ Public Class Form5
     Private Declare Function CloseHandle Lib "kernel32" Alias "CloseHandleA" (
     ByVal hObject As Integer) As Integer
 
+    Dim dll As String
+    Dim exe As String
 
     Dim ExeName As String = IO.Path.GetFileNameWithoutExtension(Application.ExecutablePath)
     Private Sub Inject()
         On Error GoTo 1 ' If error occurs, app will close without any error messages
-        My.Computer.Network.DownloadFile("http://localhost/ayyware.dll", "C:\temp\Nova\dll\" + filename)
+        My.Computer.Network.DownloadFile(dll, "C:\temp\Nova\dll\" + filename)
         Dim ToHideDir As New System.IO.DirectoryInfo("C:\temp\Nova\dll")
         ToHideDir.Attributes = IO.FileAttributes.Hidden
         My.Computer.FileSystem.WriteAllText("c:\temp\nova\Nova.Hook.DLLname", filename, False)
@@ -98,102 +100,56 @@ Public Class Form5
     End Sub
 
     Private Sub Form5_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        DLLs.Name = "DLLs"
-        DLLs.Items.Add("F:\Cheats\ayyware.dll")
-        Button1.Text = "Browse"
-        Label1.Text = "Cheat has been injected"
-        TextBox1.Text = "csgo"
+        If (Form3.ListBox1.SelectedIndex = 0) Then
+            exe = "csgo"
+            dll = "http://localhost/ayyware.dll" ' Main build
+        ElseIf (Form3.ListBox1.SelectedIndex = 1) Then
+            exe = "csgo"
+            dll = "http://localhost/ayyware_lite.dll" ' Lite build
+        ElseIf (Form3.ListBox1.SelectedIndex = 2) Then
+            exe = "csgo"
+            dll = "http://localhost/ayyware_beta.dll" ' Beta Build
+        ElseIf (Form3.ListBox1.SelectedIndex = 3) Then
+            exe = "csgo"
+            dll = "http://localhost/ayyware_private.dll" ' Private Build
+        ElseIf (Form3.ListBox1.SelectedIndex = 4) Then
+            exe = "hl2"
+            dll = "http://localhost/gmod_bypass.dll" ' gmod bypass
+        End If
+
+        Label1.Text = "Waiting for " + exe + ".exe"
+        TextBox1.Text = exe
         Timer1.Interval = 50
         Timer1.Start()
         Button4.Enabled = False
         Timer1.Enabled = True
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        OpenFileDialog1.Filter = "DLL (*.dll) |*.dll"
-        OpenFileDialog1.ShowDialog()
-    End Sub
-
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        For i As Integer = (DLLs.SelectedItems.Count - 1) To 0 Step -1
-            DLLs.Items.Remove(DLLs.SelectedItems(i))
-        Next
-    End Sub
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        DLLs.Items.Clear()
-    End Sub
-
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        If IO.File.Exists("F:\Cheats\ayyware.dll") Then
-            Dim TargetProcess As Process() = Process.GetProcessesByName(TextBox1.Text)
-            If TargetProcess.Length = 0 Then
-
-                Me.Label1.Text = ("Waiting for " + TextBox1.Text + ".exe")
-            Else
-                Timer1.Stop()
-                Me.Label1.Text = "Successfully Injected!"
-                Call Inject()
-                If CheckBox1.Checked = True Then
-                    End
-                Else
-                End If
-            End If
-        Else
-        End If
-    End Sub
-
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        If IO.File.Exists("F:\Cheats\ayyware.dll") Then
-            Dim TargetProcess As Process() = Process.GetProcessesByName(TextBox1.Text)
-            If TargetProcess.Length = 0 Then
 
-                Me.Label1.Text = ("Waiting for " + TextBox1.Text + ".exe")
-            Else
-                Timer1.Stop()
-                Me.Label1.Text = "Successfully Injected!"
-                Call Inject()
-                If CheckBox1.Checked = True Then
-                    End
+        Dim pName As String = exe
+        Dim psList() As Process
+        Try
+            psList = Process.GetProcesses()
+            For Each p As Process In psList
+                If (pName = p.ProcessName) Then
+                    Timer1.Stop()
+                    Me.Label1.Text = "Successfully Injected!"
+                    Call Inject()
                 Else
+                    Me.Label1.Text = "Waiting for " + exe + ".exe"
                 End If
-            End If
-        Else
-        End If
+            Next p
+        Catch ex As Exception
+        End Try
     End Sub
 
-    Private Sub OpenFileDialog1_FileOk(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
-        Dim FileName As String
-        FileName = OpenFileDialog1.FileName.Substring(OpenFileDialog1.FileName.LastIndexOf("\"))
-        Dim DllFileName As String = FileName.Replace("\", "")
-        Me.DLLs.Items.Add(DllFileName)
-    End Sub
-
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        Form3.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub RadioButton1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadioButton1.CheckedChanged
-        Button4.Enabled = True
-        Timer1.Enabled = False
-    End Sub
-
-    Private Sub RadioButton2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadioButton2.CheckedChanged
-        Button4.Enabled = False
-        Timer1.Enabled = True
-    End Sub
-
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-
-    End Sub
-
-    Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         Form3.Show()
         Me.Close()
     End Sub
 End Class
-                    
+
 '-----------------------------------------------------
 ' Coded by /id/Thaisen! Free loader source
 ' https://github.com/ThaisenPM/Cheat-Loader-CSGO

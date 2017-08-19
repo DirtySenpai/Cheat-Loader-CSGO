@@ -55,7 +55,7 @@ Partial Class Form2
         Me.Controls.Add(Me.WebBrowser1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form2"
-        Me.Text = "r"
+        Me.Text = "Nova Hook - Login Error Fix"
         Me.ResumeLayout(False)
 
     End Sub

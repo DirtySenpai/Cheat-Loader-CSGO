@@ -32,7 +32,6 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.WebBrowser2 = New System.Windows.Forms.WebBrowser()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.txtHWID = New System.Windows.Forms.TextBox()
         Me.WebBrowser3 = New System.Windows.Forms.WebBrowser()
@@ -40,19 +39,22 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 61)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 75)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(156, 20)
         Me.TextBox1.TabIndex = 0
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(12, 87)
+        Me.TextBox2.Location = New System.Drawing.Point(12, 114)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.TextBox2.Size = New System.Drawing.Size(156, 20)
@@ -60,7 +62,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(93, 113)
+        Me.Button1.Location = New System.Drawing.Point(93, 159)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -69,7 +71,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 113)
+        Me.Button2.Location = New System.Drawing.Point(12, 159)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
@@ -89,7 +91,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 140)
+        Me.Label1.Location = New System.Drawing.Point(18, 186)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(147, 13)
         Me.Label1.TabIndex = 5
@@ -127,17 +129,6 @@ Partial Class Form1
         Me.Label4.TabIndex = 9
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.ForeColor = System.Drawing.Color.Green
-        Me.Label5.Location = New System.Drawing.Point(9, 172)
-        Me.Label5.Name = "Label5"
-        Me.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label5.Size = New System.Drawing.Size(167, 13)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "An update is available! Click here!"
-        '
         'Timer1
         '
         Me.Timer1.Interval = 50
@@ -163,7 +154,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(9, 156)
+        Me.Label6.Location = New System.Drawing.Point(9, 202)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(72, 13)
         Me.Label6.TabIndex = 15
@@ -193,18 +184,48 @@ Partial Class Form1
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 2000
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(12, 59)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(55, 13)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "Username"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(12, 98)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(53, 13)
+        Me.Label7.TabIndex = 19
+        Me.Label7.Text = "Password"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(12, 140)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(94, 17)
+        Me.CheckBox1.TabIndex = 20
+        Me.CheckBox1.Text = "Remember me"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(182, 171)
+        Me.ClientSize = New System.Drawing.Size(182, 221)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.WebBrowser3)
         Me.Controls.Add(Me.txtHWID)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.WebBrowser2)
         Me.Controls.Add(Me.Label2)
@@ -233,7 +254,6 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents WebBrowser2 As WebBrowser
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents txtHWID As TextBox
     Friend WithEvents WebBrowser3 As WebBrowser
@@ -241,4 +261,7 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents CheckBox1 As CheckBox
 End Class

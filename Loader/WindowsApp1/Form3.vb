@@ -14,23 +14,19 @@ Public Class Form3
     End Sub
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Removes the .dll if CS:GO is not open. If it is open and it tries to remove it, it will give an error.
-        Dim pName As String = "csgo"
-        Dim psList() As Process
-        Try
-            psList = Process.GetProcesses()
-            For Each p As Process In psList
-                If (pName = p.ProcessName) Then
+        Dim address As String = "https://pastebin.com/raw/fusu14zA"
+        Dim client As WebClient = New WebClient()
+        Dim reader As StreamReader = New StreamReader(client.OpenRead(address))
+        RichTextBox1.Text = reader.ReadToEnd
+        RichTextBox1.Multiline = True
+        RichTextBox1.ReadOnly = True
 
-                Else
-                    Directory.Delete("C:\temp\Nova\dll", True)
-                End If
-            Next p
+        ListBox1.Items.Add("CS:GO - Main Build") '0
+        ListBox1.Items.Add("CS:GO - Lite Build") '1
+        ListBox1.Items.Add("CS:GO - Beta Build") '2
+        ListBox1.Items.Add("CS:GO - Private Build") '3
+        ListBox1.Items.Add("Garry's Mod Bypass") '4
 
-        Catch ex As Exception
-
-        End Try
-        
         'Generate HWID
         Dim hw As New clsComputerInfo
 
@@ -49,16 +45,15 @@ Public Class Form3
         txtHWID.Text = hwidEncrypted
         'HWID Generated
 
-        Label1.Text = "User Status: Premium"
+        Label1.Text = "User Status: Fetching"
         lblNetwork.Text = "Fetching status"
         Timer2.Interval = 1500
         online = 2
 
-        Dim fileReader2 As String
-        fileReader2 = My.Computer.FileSystem.ReadAllText("C:\temp\Nova\Nova.Hook")
         Label2.Text = "Loader Version: 1.0.1.0"
         clockon = 1
         Timer2.Start()
+        Timer3.Start()
         If (clockon = 1) Then
             Timer1.Start()
         Else
@@ -136,11 +131,11 @@ Public Class Form3
         Application.Restart()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         MsgBox("Your HWID is: " + txtHWID.Text)
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         Clipboard.SetText(txtHWID.Text)
         MsgBox("HWID Copied")
     End Sub
@@ -149,22 +144,22 @@ Public Class Form3
         Application.Exit()
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
         Dim webAddress As String = "http://localhost/mybb"
         Process.Start(webAddress)
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+    Private Sub Label5_Click(sender As Object, e As EventArgs)
         Dim webAddress As String = "http://localhost/mybb/usercp.php"
         Process.Start(webAddress)
     End Sub
 
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+    Private Sub Label6_Click(sender As Object, e As EventArgs)
         Dim webAddress As String = "http://localhost/mybb/private.php"
         Process.Start(webAddress)
     End Sub
 
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+    Private Sub Label9_Click(sender As Object, e As EventArgs)
 
         If (online = 1) Then
             MsgBox("Work in progress", vbCritical)
@@ -173,16 +168,17 @@ Public Class Form3
         End If
     End Sub
 
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+    Private Sub Label10_Click(sender As Object, e As EventArgs)
         If (online = 1) Then
-            Me.Close()
-            Form5.Show()
+
+
+
         Else
             MsgBox("Cheat is offline", vbCritical)
         End If
     End Sub
 
-    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+    Private Sub Label11_Click(sender As Object, e As EventArgs)
         If (online = 1) Then
             Form4.Show()
             Me.Close()
@@ -192,10 +188,9 @@ Public Class Form3
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        Timer2.Interval = 10000
-        Dim fileReader As String
-        fileReader = My.Computer.FileSystem.ReadAllText("C:\temp\Nova\Nova.Hook.Username")
+        Button5.PerformClick()
 
+        Timer2.Interval = 10000
         Try
             My.Computer.Network.Ping("127.0.0.1")
 
@@ -228,38 +223,6 @@ Public Class Form3
             lblNetwork.Text = "Down for matinence"
             lblNetwork.Location = New Point(50, 74)
         End If
-
-        Dim WebClient2 As New System.Net.WebClient
-        Try
-            Dim http4 As String = WebClient2.DownloadString("http://localhost/usercheck_get.php?username=" + fileReader)
-            If http4.Contains("User is premium") Then
-                online = 1
-            ElseIf http4.Contains("User is not premium") Then
-                online = 0
-                MsgBox("Oh no! Your subscription appears to have ended!")
-            ElseIf http4.Contains("User is banned") Then
-                online = 0
-                MsgBox("You have been banned! Program will not close!")
-                Application.Exit()
-            End If
-        Catch
-            Label1.Text = "User status: Unable to connect"
-            online = 0
-        End Try
-
-    End Sub
-
-    Private Sub gbfreeze()
-        If (online = 2) Then
-            GroupBox4.Enabled = False
-        ElseIf (online = 0) Then
-            GroupBox4.Enabled = False
-        ElseIf (online = 1) Then
-            GroupBox4.Enabled = True
-        ElseIf (online = 3) Then
-            GroupBox4.Enabled = True
-        End If
-
     End Sub
 
     Private Sub lblNetwork_Click(sender As Object, e As EventArgs) Handles lblNetwork.Click
@@ -270,13 +233,107 @@ Public Class Form3
         ElseIf (online = 3) Then
             MsgBox("The cheat is down for matinence! Please be patient in this current time")
         ElseIf (online = 0) Then
-            MsgBox("The cheat is offline! Oh no! You have to play a game legit now?!?! TRAGIC!!" + Environment.NewLine + "Possible causes: No internet connection, website is down, developer marked the cheat to be offline for matenience")
+            MsgBox("The cheat is offline!" + Environment.NewLine + "Possible causes: No internet connection, website is down, developer marked the cheat to be offline for matenience")
         End If
-
     End Sub
 
     Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
+        Label1.Text = "User Status: Fetching"
+        If WebBrowser1.DocumentText.Contains("User is premium") Then
+            Label1.ForeColor = Color.Black
+            Label1.Text = "User Status: Premium"
 
+
+        ElseIf WebBrowser1.DocumentText.Contains("User is not premium") Then
+            Timer2.Stop()
+            Label1.ForeColor = Color.Red
+            Label1.Text = "User Status: Not Premium"
+            Dim pProcess() As Process = System.Diagnostics.Process.GetProcessesByName("csgo")
+            For Each p As Process In pProcess
+                p.Kill()
+            Next
+            Directory.Delete("C:\temp\Nova\dll", True)
+            MsgBox("Your subscription has ended!", vbCritical)
+            Application.Exit()
+
+
+        ElseIf WebBrowser1.DocumentText.Contains("banned") Then
+            Timer2.Stop()
+            Label1.ForeColor = Color.Red
+            Label1.Text = "User Status: Banned"
+            Dim pProcess() As Process = System.Diagnostics.Process.GetProcessesByName("csgo")
+            For Each p As Process In pProcess
+                p.Kill()
+            Next
+            Directory.Delete("C:\temp\Nova\dll", True)
+            MsgBox("You have been banned!", vbCritical)
+            Application.Exit()
+
+
+        ElseIf WebBrowser1.DocumentText.Contains("No user") Then
+            Timer2.Stop()
+            Label1.ForeColor = Color.Red
+            Label1.Text = "User Status: No User Found"
+            Dim pProcess() As Process = System.Diagnostics.Process.GetProcessesByName("csgo")
+            For Each p As Process In pProcess
+                p.Kill()
+            Next
+
+            Try
+                Directory.Delete("C:\temp\Nova\dll", True)
+            Catch ex As Exception
+
+            End Try
+            MsgBox("No user found!", vbCritical)
+            Application.Exit()
+        End If
+    End Sub
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        If (online = 1) Then
+            If Me.ListBox1.SelectedIndex >= 0 Then
+                'something is selected
+                Form5.Show()
+                Me.Hide()
+            Else
+                'Nothing is
+                MsgBox("Error: Please select a cheat")
+            End If
+        ElseIf (online = 0) Then
+            MsgBox("Cheat is offline", vbCritical)
+        ElseIf (online = 3) Then
+            MsgBox("Cheat is offline", vbCritical)
+        End If
+    End Sub
+
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
+        Clipboard.SetText(txtHWID.Text)
+        MsgBox("HWID Copied")
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
+
+
+    End Sub
+
+    Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
+        WebBrowser1.Navigate("http://localhost/usercheck_get.php?username=" + My.Settings.username + "&submit=Submit")
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        ' Removes the .dll if CS:GO is not open. If it is open and it tries to remove it, it will give an error.
+        Dim pName As String = "csgo"
+        Dim psList() As Process
+        Try
+            psList = Process.GetProcesses()
+            For Each p As Process In psList
+                If (pName = p.ProcessName) Then
+                Else
+                    Directory.Delete("C:\temp\Nova\dll", True)
+                End If
+            Next p
+        Catch ex As Exception
+        End Try
     End Sub
 End Class
 

@@ -120,7 +120,7 @@ Upload the following files to your webserver:
 
 3. Modify them to work for your website's setup.
     * The checks currently use forums_users, the default install of MyBB will make it mybb_users. Please make sure that they coincide correctly.
-    * $link refers to your MySQL login... not your cPanel login... Didn't think I'd have to put that in here
+    * $link refers to your MySQL login... **NOT** your cPanel login... didn't think I'd have to put that in here
 
 4. In usercheck_get.php, modify the usergroup numbers to match your forums.
 

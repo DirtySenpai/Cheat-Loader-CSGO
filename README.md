@@ -16,6 +16,8 @@ Do you like what I'm doing with this repo? Wanna show me some love with one clic
 
 Please read the "known issues" section as it will give some insight to why your loader may not be working. I will try to update it with new information as they become known.
 
+Have some code you wanna add to the repo? Let me know through an email (thaisenbusiness@gmail.com) and I will test it out and add you some credits and maybe let you collab on the repo.
+
 ## Contents
 - Pre-Setup
     * [Screenshots](#screenshots)

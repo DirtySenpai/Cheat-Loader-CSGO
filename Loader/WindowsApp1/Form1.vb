@@ -19,6 +19,14 @@ Public Class Form1
         WebBrowser2.Navigate("http://localhost/usercheck.php")
         WebBrowser3.Navigate("http://localhost/hwid.php")
         
+        'Check connection to website
+        Try
+            My.Computer.Network.Ping("www.yoursite.com")
+        Catch
+            MsgBox("Error: Unable to connect to the website", vbCritical)
+            Application.Exit()
+        End Try
+        
         'Generate HWID
         Dim hw As New clsComputerInfo
 

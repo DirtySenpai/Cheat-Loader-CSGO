@@ -167,9 +167,7 @@ Public Class Form3
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
 
         If (online = 1) Then
-            MsgBox("THIS IS A PUBLIC CHEAT! ARE YOU SURE?", vbCritical)
-            Thread.Sleep(1000)
-            Process.Start("F:\ABS.exe")
+            MsgBox("Work in progress", vbCritical)
         Else
             MsgBox("Cheat is offline", vbCritical)
         End If

@@ -176,7 +176,10 @@ Upload the following files to your webserver:
 
 3. Status.txt on your webserver works like so. 0 = offline. 1 = online. 2 = maintenance.
 
-4. For making an external cheat to work with the menu, create a new form and code it in VB.NET.
+4. For making an external cheat, these are your options.
+    * Code the cheat in VB.NET and build it directly into the Loader
+    * Make your cheat HWID locked and have it read "C:\temp\Nova\Nova.Hook.Username" and then use the information in the file and their HWID and have it enter the info into "yoursite/hwid.php" or 'yoursite/hwid_get.php?username=" + fileReader +"&hwid=" + hwid'
+    * KEEP IN MIND! The cheat uses CPU, Mobo and MAC address then encrypts them with MD5.
 
 5. If you do not want an external cheat, remove the label and adjust the other labels on Form3.vb under the groupbox named cheats.
 
